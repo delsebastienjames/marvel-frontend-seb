@@ -1,10 +1,25 @@
 import "./App.css";
+import "./index.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Characters from "./components/Characters";
+import Comics from "./components/Comics";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route path="/">
+          <Characters />
+        </Route>
+        <Route path="/comics">
+          <Comics />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
