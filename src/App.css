@@ -100,6 +100,7 @@ body {
   margin: auto;
   margin-top: 15px;
   margin-bottom: 15px;
+  text-decoration: "none";
 }
 .connecter {
   display: flex;
@@ -117,6 +118,7 @@ body {
   margin: auto;
   margin-top: 35px;
   margin-bottom: 15px;
+  text-decoration: "none";
 }
 /* Media Queries */
 
