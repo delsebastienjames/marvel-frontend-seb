@@ -1,4 +1,6 @@
-const Header = () => {
+import { Link } from "react-router-dom"; // permet de rendre clickable
+
+const Header = ({ userToken, setUser }) => {
   return (
     <div className="header">
       <p className="title-marvel">
@@ -9,9 +11,29 @@ const Header = () => {
         <span data-text="E">E</span>
         <span data-text="L">L</span>
       </p>
-      <button className="connecter"> se connecter</button>
-      <button className="inscrire"> s'inscrire</button>
+      {userToken ? (
+        <button className="connecter" onClick={() => setUser(null)}>
+          Se déconnecter
+        </button>
+      ) : (
+        <>
+          <Link className="inscrire" to="/signup">
+            S'inscrire
+          </Link>
+          <Link className="connecter" to="/login">
+            Se connecter
+          </Link>
+        </>
+      )}
     </div>
   );
 };
+
+//       <Link>
+//         <button className="connecter"> se connecter</button>
+//         <button className="inscrire"> s'inscrire</button>
+//       </Link>
+//     </div>
+//   );
+// };
 export default Header;
