@@ -6,7 +6,6 @@ const Signup = ({ setUser }) => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [checkbox, setCheckbox] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
   const history = useHistory();
