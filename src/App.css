@@ -249,18 +249,6 @@ h4 {
 
 /*********************************************************************************************/
 
-/********************************** CSS FORMULAIRE *******************************/
-
-/* Création de variables dans la pseudo-classe :root, pour éviter certaines répétitions en CSS. */
-
-:root {
-  --bg-primary: #4c76b5;
-  --bg-secondary: #7e90ab;
-  --bg-main: #eeebebe5;
-  --border-color: #b4bcc1;
-  --vinted-color: #09b1ba;
-}
-
 button {
   font-family: "Times New Roman", Times, serif;
 }
@@ -460,16 +448,6 @@ button:hover {
     background-color: white;
   }
 
-  .acheter {
-    font-size: 16px;
-    font-family: "Times New Roman", Times, serif;
-    color: #094aba;
-    margin: 15px;
-    padding: 10px;
-    border: 1px solid #094aba;
-    border-radius: 15px;
-    background-color: white;
-  }
   .form-inscrire {
     border: 1px solid #09b1ba;
     background-color: rgb(255, 255, 255);
@@ -504,55 +482,17 @@ button:hover {
     letter-spacing: 5px;
     line-height: 1px;
   }
-  .product_price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .air2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .air2 img {
-    display: flex;
-    justify-content: center;
-  }
+
   .uppercase {
     text-transform: uppercase;
     font-weight: 800;
     margin-left: 15px;
   }
 
-  .annonce,
-  .center-input {
-    /* border: 1px solid #ba0941; */
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    width: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
   .form {
     margin-top: 150px;
   }
-  .card-annonce {
-    margin-bottom: 160px;
-  }
-  .visa {
-    background-color: rgba(144, 183, 242, 0.098);
-    margin: 10px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    width: 250px;
-    border: 1px solid #0932ba;
-    height: 100px;
-    padding: 15px;
-    border-radius: 15px;
-  }
+
   .parcourir {
     /* background-color: brown; */
     width: 42vw;
@@ -583,72 +523,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-.inscrire {
-  font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
-  color: #09b1ba;
-  margin: 15px;
-  padding: 10px;
-  border: 1px solid #09b1ba;
-  border-radius: 15px;
-  background-color: white;
-  text-decoration: none;
-}
-.connecter {
-  font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
-  color: #7a1303ad;
-  margin: 15px;
-  padding: 10px;
-  border: 1px solid #7a1303ad;
-  border-radius: 15px;
-  background-color: white;
-  text-decoration: none;
-}
-.connecter-sub {
-  font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
-  color: #7a1303ad;
-  margin: 15px;
-  padding: 10px;
-  /* border: 1px solid #7a1303ad; */
-  border-radius: 15px;
-  background-color: white;
-}
-.acheter {
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
-  color: #ba8209;
-  margin: 15px;
-  padding: 10px;
-  border: 1px solid #ba8209;
-  border-radius: 15px;
-  background-color: white;
-  text-decoration: none;
-}
-.card-payment {
-  margin: auto;
-  width: 42vw;
-  /* background-color: aqua; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: -15px;
-  line-height: 50px;
-}
-.visa {
-  background-color: rgba(144, 183, 242, 0.098);
-  margin: 10px;
-  margin: auto;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  width: 250px;
-  border: 1px solid #0932ba;
-  height: 100px;
-  padding: 15px;
-  border-radius: 15px;
-}
+
 .articles {
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
@@ -685,53 +560,10 @@ button:hover {
   margin-top: 15px;
 }
 
-.card-annonce {
-  /* border: 1px solid red; */
-  display: flex;
-  padding: 15px;
-  flex-direction: column;
-  margin-top: 5px;
-  /* box-shadow: 1px 3px 15px rgb(213, 211, 211); */
-  margin-top: -25px;
-}
-.description {
-  /* background-color: chartreuse; */
-  /* width: 36vw; */
-}
-.parcourir {
-  /* background-color: brown; */
-  width: auto;
-  font-size: 12px;
-}
-.center {
-  text-align: center;
-  margin-bottom: 10px;
-}
-.center-input {
-  margin: auto;
-  text-align: center;
-  margin-bottom: 25px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 1px 3px 15px rgb(213, 211, 211);
-  outline: none;
-}
-
 .button {
   border: 1px solid tomato;
 }
-.under-text {
-  border: 1px solid brown;
-}
-.grey {
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: grey;
-  /* font-size: 14px; */
-  margin: 2px;
-}
-.main {
-  margin-bottom: 150px;
-}
+
 .air {
   max-width: 740px;
   margin: 0 auto;
@@ -746,102 +578,4 @@ button:hover {
   margin-bottom: 150px;
   letter-spacing: 1px;
   line-height: 1px;
-}
-.air2 {
-  max-width: 250px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /* border: 1px solid rgb(116, 147, 160); */
-  border-radius: 5px;
-  /* margin-top: 15px; */
-  padding: 10px;
-}
-.product_description {
-  background-color: brown;
-}
-.product_price {
-  padding-left: 15px;
-  font-weight: 700;
-  color: black;
-  margin-top: 4px;
-  display: flex;
-  justify-content: center;
-}
-.uppercase {
-  text-transform: uppercase;
-  font-weight: 800;
-  /* margin-right: 15px; */
-}
-.fantasy {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  margin-top: 2px;
-  text-transform: capitalize;
-  text-decoration: none;
-  list-style: none;
-}
-.picture {
-  border-radius: 15px;
-  margin: 30px;
-}
-.euro {
-  color: #909595;
-}
-.marque {
-  font-weight: 800;
-  color: #7a1303ad;
-  font-size: 18px;
-  margin-top: 20px;
-}
-.form {
-  margin: auto;
-  /* border: 1px solid rgb(106, 56, 84); */
-  border-radius: 15px;
-  box-shadow: 1px 3px 15px rgb(213, 211, 211);
-}
-.header {
-  display: flex;
-  justify-content: center;
-  font-size: 55px;
-  font-family: "Times New Roman", Times, serif;
-  /* border: 1px solid teal; */
-  padding-bottom: 10px;
-  color: #09b1ba;
-  margin-top: 25px;
-}
-
-.red {
-  color: crimson;
-}
-.vinted {
-  color: #09b1ba;
-}
-.center {
-  text-align: center;
-}
-.footer {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  /* font-size: 21px; */
-  font-family: "Times New Roman", Times, serif;
-  background-color: #09b1ba;
-  border: 1px solid rgb(90, 0, 128);
-  padding: 20px 0;
-  color: white;
-  bottom: 0;
-  position: fixed;
-  width: auto;
-  width: 100%;
-}
-
-.footer img {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 10px;
 }
