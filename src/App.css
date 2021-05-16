@@ -1,1 +1,247 @@
 /* Other rules */
+
+/* Création de variables dans la pseudo-classe :root, pour éviter certaines répétitions en CSS. */
+
+:root {
+  --bg-primary: #4c76b5;
+  --bg-secondary: #7e90ab;
+  --bg-main: #eeebebe5;
+  --border-color: #b4bcc1;
+  --vinted-color: #09b1ba;
+}
+.title-marvel {
+  /* border: 1px solid red; */
+}
+p {
+  color: #fff;
+  font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+p span {
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+p span::before,
+p span::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  transform-origin: left top;
+  transition: all ease-out 0.3s;
+  content: attr(data-text);
+}
+p span::before {
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+p span::after {
+  z-index: 2;
+  color: #c20000;
+  text-shadow: -1px 0 1px #ff0404, 1px 0 1px rgba(0, 0, 0, 0.8);
+  transform: rotateY(-40deg);
+}
+p span:hover::before {
+  transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+p span:hover::after {
+  transform: rotateY(-10deg);
+}
+p span + span {
+  margin-left: 0.3em;
+}
+@media (min-width: 20em) {
+  p {
+    font-size: 2em;
+  }
+  p span::before,
+  p span::after {
+    display: block;
+  }
+}
+@media (min-width: 10em) {
+  p {
+    font-size: 0em;
+  }
+  .title-marvel {
+    /* border: 1px solid rgb(160, 156, 156); */
+  }
+}
+@media (min-width: 20em) {
+  p {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 30em) {
+  p {
+    font-size: 3em;
+  }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.inscrire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ff0000;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  cursor: pointer;
+  width: 100px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.connecter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  cursor: pointer;
+  width: 100px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+/* Media Queries */
+
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+}
+
+/* *********************************************************** */
+
+/***************************************************************/
+html {
+  text-align: center;
+  margin-top: 50px;
+  background-color: rgb(0, 0, 0);
+}
+.card {
+  /* border: 1px solid var(--vinted-color); */
+  display: inline-flex;
+  margin: 5px;
+  text-align: justify;
+}
+h4 {
+  padding: 10px;
+}
+.name {
+  color: rgb(23, 22, 22);
+  font-size: 1rem;
+}
+.marvel-comics {
+  /* border: 1px solid brown; */
+  padding: 10px;
+}
+
+.marvel-comics {
+  background-color: skyblue;
+  /* border: 1px solid blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.marvel-comics:hover {
+  background-color: #ba0909;
+  cursor: pointer;
+}
+.marvel-comics > .name:hover {
+  color: white;
+}
+
+.picture {
+  border-radius: 15px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 326px;
+}
+
+.presentation {
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+  width: 250px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+.comics {
+  text-align: center;
+  text-shadow: 1px 2px 15px rgb(203, 200, 200);
+  font-size: 12px;
+  color: #762626;
+  margin-top: -5px;
+}
+.books {
+  color: aliceblue;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 75px;
+  font-family: "Times New Roman", Times, serif;
+  /* border: 1px solid teal; */
+  padding-bottom: 10px;
+  color: #ba0909;
+  margin-bottom: 25px;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* font-size: 21px; */
+  font-family: "Times New Roman", Times, serif;
+  background-color: #070c0c;
+  border: 1px solid rgb(90, 0, 128);
+  padding: 20px 0;
+  color: rgb(244, 0, 0);
+  bottom: 0;
+  position: fixed;
+  width: auto;
+  width: 100%;
+}
+
+.footer img {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
