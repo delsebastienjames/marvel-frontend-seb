@@ -18,10 +18,12 @@ const Header = ({ userToken, setUser }) => {
       ) : (
         <>
           <Link className="inscrire" to="/signup">
-            S'inscrire
+            <button className="inscrire" style={{ textDecoration: "none" }}>
+              s'inscrire
+            </button>
           </Link>
           <Link className="connecter" to="/login">
-            Se connecter
+            <button className="connecter"> se connecter</button>
           </Link>
         </>
       )}
@@ -29,11 +31,4 @@ const Header = ({ userToken, setUser }) => {
   );
 };
 
-//       <Link>
-//         <button className="connecter"> se connecter</button>
-//         <button className="inscrire"> s'inscrire</button>
-//       </Link>
-//     </div>
-//   );
-// };
 export default Header;
