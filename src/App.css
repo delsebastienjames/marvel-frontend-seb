@@ -345,9 +345,6 @@ button:hover {
   input[type="submit"] {
     font-size: 20px;
   }
-  /* button {
-        font-size: 20px;
-    } */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -472,12 +469,6 @@ button:hover {
     height: 100vh;
     letter-spacing: 5px;
     line-height: 1px;
-  }
-
-  .uppercase {
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-left: 15px;
   }
 
   .form {
