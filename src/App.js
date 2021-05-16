@@ -4,6 +4,7 @@ import "./index.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Characters from "./components/Characters";
 // import Comics from "./components/Comics";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
