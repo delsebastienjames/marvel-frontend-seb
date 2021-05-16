@@ -8,7 +8,9 @@ const Characters = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/characters");
+        const response = await axios.get(
+          "https://marvel-backend-seb.herokuapp.com/characters"
+        );
         // console.log(response.data);
         setData(response.data);
         setIsLoading(false);
