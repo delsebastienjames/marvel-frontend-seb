@@ -246,3 +246,602 @@ h4 {
   align-content: center;
   margin-top: 10px;
 }
+
+/*********************************************************************************************/
+
+/********************************** CSS FORMULAIRE *******************************/
+
+/* Création de variables dans la pseudo-classe :root, pour éviter certaines répétitions en CSS. */
+
+:root {
+  --bg-primary: #4c76b5;
+  --bg-secondary: #7e90ab;
+  --bg-main: #eeebebe5;
+  --border-color: #b4bcc1;
+  --vinted-color: #09b1ba;
+}
+
+button {
+  font-family: "Times New Roman", Times, serif;
+}
+
+input,
+textarea {
+  margin: auto;
+  margin-bottom: auto;
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid var(--border-color);
+  width: 40vw;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  color: rgb(40, 40, 40);
+  /* box-shadow: 6px 1px 15px rgb(252, 254, 255); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f000;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  width: 100%;
+  font-size: 22px;
+  height: 100%;
+  border-radius: 5px;
+  color: white;
+  background-color: #5b96fc92;
+  color: rgb(80, 80, 80);
+  /* width: 40vw; */
+  margin: auto;
+  box-shadow: 1px 3px 15px rgb(213, 211, 211);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--bg-primary);
+  color: white;
+}
+
+button {
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  font-size: 22px;
+  height: 100%;
+  border-radius: 5px;
+  color: white;
+  background-color: #5b96fc92;
+  color: rgb(80, 80, 80);
+  height: 42px;
+}
+
+button:hover {
+  background-color: var(--bg-primary);
+  color: white;
+}
+
+.form-inscrire {
+  border: 1px solid #09b1ba;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  width: 42vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.form-connecter {
+  border: 1px solid #09b1ba;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  width: 42vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  main {
+    /* width: auto; */
+    padding: 42px;
+    background-color: var(--bg-main);
+    border-radius: 10px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  input[type="submit"] {
+    font-size: 20px;
+  }
+  /* button {
+        font-size: 20px;
+    } */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    padding: 42px;
+    background-color: var(--bg-main);
+    border-radius: 10px;
+    /* width: 500px; */
+    margin: auto;
+    width: 30vw;
+    /* padding: 0 20px; */
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 45px;
+    margin: 5px 0 45px 0;
+    color: rgb(56, 81, 106);
+    text-align: center;
+  }
+  input[type="submit"] {
+    font-size: 16px;
+  }
+  /* button {
+        font-size: 16px;
+    } */
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-family: "Times New Roman", Times, serif;
+    /* border: 1px solid teal; */
+    padding-bottom: 10px;
+    color: #09b1ba;
+    margin-top: 25px;
+  }
+  main {
+    padding: 42px;
+    background-color: var(--bg-main);
+    border-radius: 10px;
+    /* width: 500px; */
+    margin: auto;
+    width: 30vw;
+    /* padding: 0 20px; */
+  }
+
+  input,
+  textarea {
+    margin: auto;
+    margin-bottom: auto;
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid var(--border-color);
+    width: 40vw;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    color: rgb(40, 40, 40);
+    /* box-shadow: 6px 1px 15px rgb(252, 254, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f000;
+  }
+
+  .inscrire {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    color: #09b1ba;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #09b1ba;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .connecter {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    color: #7a1303ad;
+    margin: 15px;
+    padding: 10px;
+    /* border: 1px solid #7a1303ad; */
+    border-radius: 15px;
+    background-color: white;
+  }
+
+  .acheter {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    color: #094aba;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #094aba;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .form-inscrire {
+    border: 1px solid #09b1ba;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 42vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 150px;
+  }
+
+  .form-connecter {
+    border: 1px solid #09b1ba;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 42vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 150px;
+  }
+  .air {
+    max-width: 740px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    letter-spacing: 5px;
+    line-height: 1px;
+  }
+  .product_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .air2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .air2 img {
+    display: flex;
+    justify-content: center;
+  }
+  .uppercase {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-left: 15px;
+  }
+
+  .annonce,
+  .center-input {
+    /* border: 1px solid #ba0941; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .form {
+    margin-top: 150px;
+  }
+  .card-annonce {
+    margin-bottom: 160px;
+  }
+  .visa {
+    background-color: rgba(144, 183, 242, 0.098);
+    margin: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 250px;
+    border: 1px solid #0932ba;
+    height: 100px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .parcourir {
+    /* background-color: brown; */
+    width: 42vw;
+    font-size: 12px;
+  }
+  .label {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .description {
+    /* background-color: chartreuse; */
+    width: auto;
+  }
+}
+
+/* *********************************************************** */
+
+/***************************************************************/
+
+.container {
+  background-color: #d7dafc;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inscrire {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: #09b1ba;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #09b1ba;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+}
+.connecter {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: #7a1303ad;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #7a1303ad;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+}
+.connecter-sub {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: #7a1303ad;
+  margin: 15px;
+  padding: 10px;
+  /* border: 1px solid #7a1303ad; */
+  border-radius: 15px;
+  background-color: white;
+}
+.acheter {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ba8209;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #ba8209;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+}
+.card-payment {
+  margin: auto;
+  width: 42vw;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15px;
+  line-height: 50px;
+}
+.visa {
+  background-color: rgba(144, 183, 242, 0.098);
+  margin: 10px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 250px;
+  border: 1px solid #0932ba;
+  height: 100px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.articles {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: #03297aad;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #03297aad;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+}
+.annonce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 250px;
+}
+
+.litle-picture img {
+  width: 100px;
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 1px 3px 15px rgb(213, 211, 211);
+  margin-top: -12px;
+}
+.label {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.card-annonce {
+  /* border: 1px solid red; */
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  margin-top: 5px;
+  /* box-shadow: 1px 3px 15px rgb(213, 211, 211); */
+  margin-top: -25px;
+}
+.description {
+  /* background-color: chartreuse; */
+  /* width: 36vw; */
+}
+.parcourir {
+  /* background-color: brown; */
+  width: auto;
+  font-size: 12px;
+}
+.center {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.center-input {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 3px 15px rgb(213, 211, 211);
+  outline: none;
+}
+
+.button {
+  border: 1px solid tomato;
+}
+.under-text {
+  border: 1px solid brown;
+}
+.grey {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: grey;
+  /* font-size: 14px; */
+  margin: 2px;
+}
+.main {
+  margin-bottom: 150px;
+}
+.air {
+  max-width: 740px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid rgb(143, 144, 145);
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 40px;
+  box-shadow: 1px 3px 15px lightgray;
+  margin-bottom: 150px;
+  letter-spacing: 1px;
+  line-height: 1px;
+}
+.air2 {
+  max-width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: 1px solid rgb(116, 147, 160); */
+  border-radius: 5px;
+  /* margin-top: 15px; */
+  padding: 10px;
+}
+.product_description {
+  background-color: brown;
+}
+.product_price {
+  padding-left: 15px;
+  font-weight: 700;
+  color: black;
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+}
+.uppercase {
+  text-transform: uppercase;
+  font-weight: 800;
+  /* margin-right: 15px; */
+}
+.fantasy {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-top: 2px;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+}
+.picture {
+  border-radius: 15px;
+  margin: 30px;
+}
+.euro {
+  color: #909595;
+}
+.marque {
+  font-weight: 800;
+  color: #7a1303ad;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.form {
+  margin: auto;
+  /* border: 1px solid rgb(106, 56, 84); */
+  border-radius: 15px;
+  box-shadow: 1px 3px 15px rgb(213, 211, 211);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 55px;
+  font-family: "Times New Roman", Times, serif;
+  /* border: 1px solid teal; */
+  padding-bottom: 10px;
+  color: #09b1ba;
+  margin-top: 25px;
+}
+
+.red {
+  color: crimson;
+}
+.vinted {
+  color: #09b1ba;
+}
+.center {
+  text-align: center;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* font-size: 21px; */
+  font-family: "Times New Roman", Times, serif;
+  background-color: #09b1ba;
+  border: 1px solid rgb(90, 0, 128);
+  padding: 20px 0;
+  color: white;
+  bottom: 0;
+  position: fixed;
+  width: auto;
+  width: 100%;
+}
+
+.footer img {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
