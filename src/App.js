@@ -3,7 +3,7 @@ import "./App.css";
 import "./index.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Characters from "./components/Characters";
-import Comics from "./components/Comics";
+// import Comics from "./components/Comics";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -38,9 +38,9 @@ const App = () => {
         </Route>
         <Route path="/login">
           <Login setUser={setUser} />
-        </Route>
+          {/* </Route>
         <Route path="/comics">
-          <Comics />
+          <Comics /> */}
         </Route>
       </Switch>
       <Footer />
