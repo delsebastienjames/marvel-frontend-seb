@@ -32,7 +32,7 @@ const Signup = ({ setUser }) => {
     } catch (error) {
       if (error.response.status === 409) {
         setErrorMessage(
-          <span className="vinted">Cet email possède déjà un compte</span>
+          <span className="marvel">Cet email possède déjà un compte</span>
         );
       } else {
         setErrorMessage(<span className="red">Une erreur est survenue.</span>);
