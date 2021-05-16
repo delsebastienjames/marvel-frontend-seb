@@ -1,5 +1,12 @@
 /* Other rules */
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
 p {
   color: #fff;
   font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
@@ -66,13 +73,6 @@ p span + span {
   p {
     font-size: 3em;
   }
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000;
 }
 
 .inscrire {
@@ -303,7 +303,7 @@ button:hover {
 }
 
 .form-inscrire {
-  border: 1px solid #09b1ba;
+  border: 1px solid #ba0909;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   width: 42vw;
@@ -314,7 +314,7 @@ button:hover {
 }
 
 .form-connecter {
-  border: 1px solid #09b1ba;
+  border: 1px solid #ba0909;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   width: 42vw;
@@ -409,28 +409,44 @@ button:hover {
   }
 
   .inscrire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     font-family: "Times New Roman", Times, serif;
-    color: #09b1ba;
+    color: #ff0000;
     margin: 15px;
-    padding: 10px;
-    border: 1px solid #09b1ba;
     border-radius: 15px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+    margin-top: 15px;
+    /* margin-bottom: 15px; */
+    text-decoration: "none";
   }
   .connecter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     font-family: "Times New Roman", Times, serif;
-    color: #7a1303ad;
+    color: #ffffff;
     margin: 15px;
-    padding: 10px;
-    /* border: 1px solid #7a1303ad; */
     border-radius: 15px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-decoration: "none";
   }
 
   .form-inscrire {
-    border: 1px solid #09b1ba;
+    border: 1px solid #ba0909;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     width: 42vw;
@@ -443,7 +459,7 @@ button:hover {
   }
 
   .form-connecter {
-    border: 1px solid #09b1ba;
+    border: 1px solid #ba0909;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     width: 42vw;
@@ -494,34 +510,6 @@ button:hover {
   justify-content: center;
 }
 
-.articles {
-  font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
-  color: #03297aad;
-  margin: 15px;
-  padding: 10px;
-  border: 1px solid #03297aad;
-  border-radius: 15px;
-  background-color: white;
-  text-decoration: none;
-}
-.annonce {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin-top: 10px;
-  margin-bottom: 250px;
-}
-
-.litle-picture img {
-  width: 100px;
-  display: flex;
-  margin: auto;
-  border-radius: 5px;
-  box-shadow: 1px 3px 15px rgb(213, 211, 211);
-  margin-top: -12px;
-}
 .label {
   /* background-color: aqua; */
   display: flex;
