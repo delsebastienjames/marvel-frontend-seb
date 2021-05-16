@@ -1,14 +1,5 @@
 /* Other rules */
 
-/* Création de variables dans la pseudo-classe :root, pour éviter certaines répétitions en CSS. */
-
-:root {
-  --bg-primary: #4c76b5;
-  --bg-secondary: #7e90ab;
-  --bg-main: #eeebebe5;
-  --border-color: #b4bcc1;
-}
-
 p {
   color: #fff;
   font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
@@ -119,6 +110,9 @@ body {
   margin-top: 35px;
   margin-bottom: 15px;
   text-decoration: "none";
+}
+.connecter:hover {
+  color: #ff0000;
 }
 /* Media Queries */
 
@@ -305,7 +299,6 @@ button {
 }
 
 button:hover {
-  background-color: var(--bg-primary);
   color: white;
 }
 
