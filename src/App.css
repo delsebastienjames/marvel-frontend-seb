@@ -198,9 +198,13 @@ h4 {
 .comics {
   text-align: center;
   text-shadow: 1px 2px 15px rgb(203, 200, 200);
-  font-size: 12px;
+  font-size: 13px;
   color: #762626;
-  margin-top: -5px;
+  margin-top: -8px;
+  background-color: #c9e4f9a8;
+  border-radius: 15px;
+  min-height: 5px;
+  height: 15px;
 }
 .books {
   color: aliceblue;
