@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import "./index.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -6,13 +7,37 @@ import Comics from "./components/Comics";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-function App() {
+import Cookies from "js-cookie"; // package npm
+
+import Signup from "./container/Signup"; // Composant Signup
+import Login from "./container/Login"; // Composant Login
+
+const App = () => {
+  const [userToken, setUserToken] = useState(Cookies.get("userToken") || null);
+  const setUser = (token, id) => {
+    if (token) {
+      Cookies.set("userToken", token, { expires: 10 });
+      Cookies.set("userId", id);
+      setUserToken(token);
+    } else {
+      Cookies.remove("userToken");
+      Cookies.remove("userId");
+      setUserToken(null);
+    }
+  };
+
   return (
     <Router>
-      <Header />
+      <Header userToken={userToken} setUser={setUser} />
       <Switch>
         <Route path="/">
           <Characters />
+        </Route>
+        <Route path="/signup">
+          <Signup setUser={setUser} />
+        </Route>
+        <Route path="/login">
+          <Login setUser={setUser} />
         </Route>
         <Route path="/comics">
           <Comics />
@@ -21,6 +46,6 @@ function App() {
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;
