@@ -21,9 +21,11 @@ const Signup = ({ setUser }) => {
           password: password, // on peut utiliser que password; si le nom est identique
         }
       );
-      // console.log(response.data);
+      console.log(response.data);
       if (response.data.token) {
         setUser(response.data.token);
+        console.log(response.data.token);
+
         history.push("/");
       } else {
         setErrorMessage(<span className="red">Une erreur est survenue.</span>);
@@ -37,7 +39,7 @@ const Signup = ({ setUser }) => {
         setErrorMessage(<span className="red">Une erreur est survenue.</span>);
       }
       console.log(error.response);
-      console.log(error.message);
+      //console.log(error.message);
     }
   };
 
@@ -63,6 +65,7 @@ const Signup = ({ setUser }) => {
         />
         <br />
         <span>{errorMessage}</span>
+
         <input type="submit" value="S'inscrire" />
       </form>
     </div>
