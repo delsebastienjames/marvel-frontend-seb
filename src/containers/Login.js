@@ -43,11 +43,13 @@ const Login = ({ setUser }) => {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           type="email"
+          placeholder="Email"
         />
         <input
           value={password}
           onChange={(event) => setPassword(event.target.value)}
           type="password"
+          placeholder="Mot de passe"
         />
         <span>{errorMessage}</span>
         <input
