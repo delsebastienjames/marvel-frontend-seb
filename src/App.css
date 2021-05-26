@@ -179,7 +179,7 @@ h4 {
 }
 
 .presentation {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   margin-top: 15px;
   width: 250px;
   font-size: 14px;
@@ -251,7 +251,7 @@ textarea {
   padding: 10px;
   font-size: 16px;
   outline: none;
-  color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
   /* box-shadow: 6px 1px 15px rgb(252, 254, 255); */
   display: flex;
   justify-content: center;
@@ -270,11 +270,10 @@ input[type="submit"] {
   height: 100%;
   border-radius: 5px;
   color: white;
-  background-color: #5b96fc92;
-  color: rgb(80, 80, 80);
+  background-color: rgba(244, 0, 0, 0.502);
   /* width: 40vw; */
   margin: auto;
-  box-shadow: 1px 3px 15px rgb(213, 211, 211);
+  border: 1px solid white;
 }
 
 input[type="submit"]:hover {
@@ -298,24 +297,26 @@ button:hover {
 
 .form-inscrire {
   border: 1px solid #ba0909;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   border-radius: 15px;
   width: 42vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  color: #09b1ba;
 }
 
 .form-connecter {
   border: 1px solid #ba0909;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   border-radius: 15px;
   width: 42vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  color: #09b1ba;
 }
 
 /* Media Queries */
@@ -359,7 +360,7 @@ button:hover {
     padding: 10px;
     font-size: 16px;
     outline: none;
-    color: rgb(40, 40, 40);
+    color: lime;
     /* box-shadow: 6px 1px 15px rgb(252, 254, 255); */
     display: flex;
     justify-content: center;
@@ -406,7 +407,7 @@ button:hover {
 
   .form-inscrire {
     border: 1px solid #ba0909;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 15px;
     width: 42vw;
     display: flex;
@@ -419,7 +420,7 @@ button:hover {
 
   .form-connecter {
     border: 1px solid #ba0909;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 15px;
     width: 42vw;
     display: flex;
@@ -461,7 +462,7 @@ button:hover {
 /***************************************************************/
 
 .container {
-  background-color: #d7dafc;
+  /* background-color: #d7dafc; */
   width: 100vw;
   display: flex;
   flex-direction: column;
