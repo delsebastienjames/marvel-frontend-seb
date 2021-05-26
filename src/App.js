@@ -2,17 +2,17 @@ import { useState } from "react";
 import "./App.css";
 import "./index.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Characters from "./components/Characters";
-import Comics from "./components/Comics";
+import Characters from "./containers/Characters";
+import Comics from "./containers/Comics";
 
-import Home from "./container/Home"; // Composant Home
+import Home from "./containers/Home"; // Composant Home
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Cookies from "js-cookie"; // package npm
 
-import Signup from "./container/Signup"; // Composant Signup
-import Login from "./container/Login"; // Composant Login
+import Signup from "./containers/Signup"; // Composant Signup
+import Login from "./containers/Login"; // Composant Login
 
 const App = () => {
   const [userToken, setUserToken] = useState(Cookies.get("userToken") || null);
@@ -32,7 +32,7 @@ const App = () => {
     <Router>
       <Header userToken={userToken} setUser={setUser} />
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Characters />
         </Route>
         <Route path="/signup">
