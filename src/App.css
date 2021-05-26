@@ -7,6 +7,10 @@ body {
   background-color: #000000;
 }
 /*  Effet Marvel header */
+.m,
+.l {
+  font-size: 1.2em;
+}
 p {
   color: #fff;
   font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
@@ -231,8 +235,8 @@ h4 {
   padding: 20px 0;
   color: rgb(244, 0, 0);
   bottom: 0;
+  left: 0;
   position: fixed;
-  width: auto;
   width: 100%;
 }
 
@@ -305,6 +309,7 @@ button:hover {
   align-items: center;
   margin: auto;
   color: #09b1ba;
+  background-image: url("../src/assets/img/fond-toile.jpg");
 }
 
 .form-connecter {
@@ -317,6 +322,7 @@ button:hover {
   align-items: center;
   margin: auto;
   color: #09b1ba;
+  background-image: url("../src/assets/img/fond-toile.jpg");
 }
 
 /* Media Queries */
