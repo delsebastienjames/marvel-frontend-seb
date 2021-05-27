@@ -28,14 +28,14 @@ const Characters = () => {
       {data.results.map((character, index) => {
         return (
           <p className="card">
-            <div className="marvel-comics">
+            <div className="marvel-characters">
               <h4 className="name">{character.name}</h4>
               <img
-                className="picture"
+                className="picture-characters"
                 src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
                 alt=""
               />
-              <div className="presentation">
+              <div className="presentation-characters">
                 {character.description && <div>{character.description}</div>}
                 <br></br>
                 <div className="comics">numéro : {character.comics[0]}</div>
