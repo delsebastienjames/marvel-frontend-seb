@@ -29,7 +29,7 @@ const Login = ({ setUser }) => {
     } catch (error) {
       if (error.response.status === 401) {
         setErrorMessage(
-          <span className="vinted"> Mauvais email et/ou mot de passe </span>
+          <p className="marvel"> Mauvais email et/ou mot de passe </p>
         );
       }
       console.log(error.message);
