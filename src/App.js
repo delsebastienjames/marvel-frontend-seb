@@ -32,7 +32,7 @@ const App = () => {
     <Router>
       <Header userToken={userToken} setUser={setUser} />
       <Switch>
-        <Route exact path="/characters">
+        <Route exact path="/">
           <Characters />
         </Route>
         <Route exact path="/comics">
