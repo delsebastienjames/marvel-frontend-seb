@@ -156,9 +156,19 @@ h4 {
   padding: 10px;
 }
 
-.marvel-comics {
+.marvel-characters {
   background-color: skyblue;
-  /* border: 1px solid blueviolet; */
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.marvel-comics {
+  background-color: rgb(6, 6, 6);
+  border: 1px solid #ba0909;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +183,7 @@ h4 {
   color: white;
 }
 
-.picture {
+.picture-characters {
   border-radius: 15px;
   width: 280px;
   display: flex;
@@ -181,8 +191,16 @@ h4 {
   align-items: center;
   height: 256px;
 }
+.picture-comics {
+  /* border-radius: 15px; */
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 256px; */
+}
 
-.presentation {
+.presentation-characters {
   /* background-color: rgb(255, 255, 255); */
   margin-top: 15px;
   width: 250px;
@@ -193,6 +211,20 @@ h4 {
   padding: 15px;
   margin-bottom: 5px;
   color: #1a1818;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+.presentation-comics {
+  /* background-color: rgb(255, 255, 255); */
+  margin-top: 5px;
+  width: 250px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  padding: 15px;
+  margin-bottom: 18px;
+  color: #fffefe;
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
 }
@@ -231,7 +263,7 @@ h4 {
   /* font-size: 21px; */
   font-family: "Times New Roman", Times, serif;
   background-color: #070c0c;
-  border: 1px solid rgb(90, 0, 128);
+  border: 1px dashed #ba0909;
   padding: 20px 0;
   color: rgb(244, 0, 0);
   bottom: 0;
