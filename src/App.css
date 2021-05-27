@@ -96,6 +96,7 @@ p span + span {
   margin-top: 15px;
   margin-bottom: 15px;
   text-decoration: "none";
+  box-shadow: 1px 3px 15px rgb(60, 59, 59);
 }
 /* Bouton se connecter */
 .connecter {
@@ -133,6 +134,7 @@ p span + span {
 /* *********************************************************** */
 
 /***************************************************************/
+
 html {
   text-align: center;
   margin-top: 50px;
@@ -147,6 +149,20 @@ html {
 h4 {
   padding: 10px;
 }
+.row {
+  background-color: #494949;
+  display: flex;
+  margin-top: 45px;
+  width: 100vw;
+}
+
+.marvel {
+  color: #8a8a8a;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-family: "Cochin";
+  letter-spacing: 3px;
+}
 .name {
   color: rgb(23, 22, 22);
   font-size: 1rem;
@@ -157,7 +173,7 @@ h4 {
 }
 
 .marvel-characters {
-  background-color: skyblue;
+  background-color: #0b50906b;
   /* border: 1px solid white; */
   display: flex;
   justify-content: center;
@@ -175,6 +191,16 @@ h4 {
   flex-direction: column;
   border-radius: 15px;
 }
+.marvel-characters:hover {
+  background-color: #ba090956;
+  cursor: pointer;
+}
+.marvel-characters > .name {
+  color: #ba0909;
+}
+.marvel-characters > .name:hover {
+  color: rgb(255, 255, 255);
+}
 .marvel-comics:hover {
   background-color: #ba0909;
   cursor: pointer;
@@ -190,6 +216,7 @@ h4 {
   justify-content: center;
   align-items: center;
   height: 256px;
+  padding: 10px;
 }
 .picture-comics {
   /* border-radius: 15px; */
@@ -210,7 +237,7 @@ h4 {
   height: 120px;
   padding: 15px;
   margin-bottom: 5px;
-  color: #1a1818;
+  color: #ffffff;
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
 }
@@ -263,7 +290,7 @@ h4 {
   /* font-size: 21px; */
   font-family: "Times New Roman", Times, serif;
   background-color: #070c0c;
-  border: 1px dashed #ba0909;
+  /* border: 1px dashed #ba0909; */
   padding: 20px 0;
   color: rgb(244, 0, 0);
   bottom: 0;
