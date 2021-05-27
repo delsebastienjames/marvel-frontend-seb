@@ -27,7 +27,7 @@ const Header = ({ userToken, setUser }) => {
               className="inscrire"
               to="/signup"
             >
-              <button className="inscrire">s'inscrire</button>
+              <button className="inscrire-bis">s'inscrire</button>
             </Link>
             <Link
               style={{ textDecoration: "none" }}
@@ -41,14 +41,14 @@ const Header = ({ userToken, setUser }) => {
               className="inscrire"
               to="/comics"
             >
-              <button className="inscrire"> Comics</button>
+              <button className="inscrire-bis"> COMICS</button>
             </Link>
             <Link
               style={{ textDecoration: "none" }}
               className="inscrire"
               to="/"
             >
-              <button className="inscrire"> Characters</button>
+              <button className="inscrire"> CHARACTERS</button>
             </Link>
           </div>
         </>
