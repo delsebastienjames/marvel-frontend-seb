@@ -35,7 +35,7 @@ const App = () => {
         <Route exact path="/">
           <Characters />
         </Route>
-        <Route exact path="/comics">
+        <Route exact path="/comics" setUser={setUser}>
           <Comics />
         </Route>
         <Route path="/signup">
