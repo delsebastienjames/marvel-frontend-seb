@@ -377,7 +377,9 @@ button {
 button:hover {
   color: white;
 }
-
+.inscrire-bis:hover {
+  color: rgb(244, 0, 0);
+}
 .form-inscrire {
   border: 1px solid #ba0909;
   /* background-color: rgb(255, 255, 255); */
@@ -429,7 +431,7 @@ button:hover {
     /* border: 1px solid teal; */
     padding-bottom: 10px;
     color: #09b1ba;
-    margin-top: -25px;
+    margin-top: -15px;
   }
 
   input,
