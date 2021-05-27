@@ -21,20 +21,36 @@ const Header = ({ userToken, setUser }) => {
         </button>
       ) : (
         <>
-          <Link
-            style={{ textDecoration: "none" }}
-            className="inscrire"
-            to="/signup"
-          >
-            <button className="inscrire">s'inscrire</button>
-          </Link>
-          <Link
-            style={{ textDecoration: "none" }}
-            className="connecter"
-            to="/login"
-          >
-            <button className="connecter"> se connecter</button>
-          </Link>
+          <div className="row">
+            <Link
+              style={{ textDecoration: "none" }}
+              className="inscrire"
+              to="/signup"
+            >
+              <button className="inscrire">s'inscrire</button>
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              className="inscrire"
+              to="/login"
+            >
+              <button className="inscrire"> se connecter</button>
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              className="inscrire"
+              to="/comics"
+            >
+              <button className="inscrire"> Comics</button>
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              className="inscrire"
+              to="/"
+            >
+              <button className="inscrire"> Characters</button>
+            </Link>
+          </div>
         </>
       )}
     </div>
