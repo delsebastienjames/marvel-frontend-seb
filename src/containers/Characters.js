@@ -38,7 +38,7 @@ const Characters = () => {
               <div className="presentation-characters">
                 {character.description && <div>{character.description}</div>}
                 <br></br>
-                <div className="comics">numéro : {character.comics[0]}</div>
+                {/* <div className="comics">numéro : {character.comics[0]}</div> */}
               </div>
             </div>
           </p>
