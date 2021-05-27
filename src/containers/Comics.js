@@ -22,26 +22,16 @@ const Comics = () => {
     fetchData();
   }, []);
 
-  //   return isLoading ? (
-  //     <span>En cours de chargement...</span>
-  //   ) : (
-  //     <div className="presentation">
-  //       {data.results.map((comics, index) => {
-  //         return <div className="books">{comics.name}</div>;
-  //       })}
-  //     </div>
-  //   );
-  // };
-
   return isLoading ? (
     <span>En cours de chargement...</span>
   ) : (
     <div>
-      {data.results.map((comic, index) => {
+      {data.results.map((comic, name) => {
         return (
           <p className="card">
             <div className="marvel-comics">
               <h4 className="name">{comic.name}</h4>
+
               <img
                 className="picture-comics"
                 src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
