@@ -4,8 +4,9 @@ import "./index.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Characters from "./containers/Characters";
 import Comics from "./containers/Comics";
+import Home from "./containers/Home";
 
-import Details from "./containers/Home"; // Composant Details
+import Details from "./containers/Details"; // Composant Details
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -46,6 +47,9 @@ const App = () => {
         </Route>
         <Route path="/login">
           <Login setUser={setUser} />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
       <Footer />
