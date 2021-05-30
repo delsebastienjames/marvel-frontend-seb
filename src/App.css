@@ -201,7 +201,29 @@ h4 {
   flex-direction: column;
   border-radius: 15px;
 }
+.marvel-home {
+  background-color: #b30000d9;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border-radius: 15px; */
+  width: 400px;
+  margin: 0 auto;
+}
 
+.picture-home {
+  /* border-radius: 15px; */
+  /* width: 280px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 256px;
+  /* padding: 10px; */
+  margin-top: 25px;
+  box-shadow: 2px 1px 15px rgb(51, 39, 39);
+}
 .marvel-comics {
   background-color: rgb(6, 6, 6);
   border: 1px solid #ba0909;
@@ -247,6 +269,23 @@ h4 {
   /* height: 256px; */
 }
 
+.presentation-home {
+  /* background-color: rgb(255, 255, 255); */
+  margin-top: 15px;
+  width: 280px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  /* height: 120px; */
+  padding: 15px;
+  margin-bottom: 35px;
+  color: #e6e5e5;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  border: 1px solid aliceblue;
+  text-align: justify;
+  box-shadow: 2px 1px 15px rgb(115, 115, 115);
+}
 .presentation-characters {
   /* background-color: rgb(255, 255, 255); */
   margin-top: 15px;
