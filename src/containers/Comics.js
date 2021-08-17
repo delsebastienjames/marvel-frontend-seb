@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+import Loader from "../components/Loader";
+
 const Comics = () => {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
@@ -23,8 +25,9 @@ const Comics = () => {
   }, []);
 
   return isLoading ? (
-    <span>En cours de chargement...</span>
+    <Loader className="loader" />
   ) : (
+    // <span>En cours de chargement...</span>
     <div>
       {data.results.map((comic, name) => {
         return (
