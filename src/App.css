@@ -647,3 +647,11 @@ button:hover {
   letter-spacing: 1px;
   line-height: 1px;
 }
+
+/* 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}  */
