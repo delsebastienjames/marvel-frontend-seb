@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom"; // permet de rendre clickable
 
+import Loader from "../components/Loader";
+
 const Characters = () => {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
@@ -23,8 +25,9 @@ const Characters = () => {
   }, []);
 
   return isLoading ? (
-    <span>En cours de chargement...</span>
+    <Loader className="loader" />
   ) : (
+    // <span>En cours de chargement...</span>
     <div>
       {data.results.map((character, index) => {
         return (
