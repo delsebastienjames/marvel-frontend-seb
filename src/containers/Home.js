@@ -3,6 +3,8 @@ import axios from "axios";
 
 import { Link } from "react-router-dom"; // permet de rendre clickable
 
+import Loader from "../components/Loader";
+
 const Home = () => {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
@@ -24,8 +26,9 @@ const Home = () => {
   }, []);
   // Ternaire
   return isLoading ? (
-    <p>En cours de chargement ...</p>
+    <Loader className="loader" />
   ) : (
+    // <p>En cours de chargement ...</p>
     <div>
       {data.results.map((character, index) => {
         // key très important (enlève également un warning du au .map)
